@@ -59,6 +59,40 @@
             </tr>
         </table>
     </section>
-    <script>    alert ("Hello,World!");    </script>
+    <script>
+        // Define a favorite color variable which stores a string
+        let favoriteColor = "blue";
+        
+        // Define an age variable which stores a number
+        let age = 25;
+        
+        // Define a constant name, which stores a string
+        const name = "John Doe";
+        
+        // Define a variable called isMinor which stores a Boolean
+        let isMinor = age < 18;
+        
+        // Define an array called favoriteColors which stores a collection of strings (at least 2)
+        let favoriteColors = ["blue", "green", "red"];
+        
+        // Declare an array called myBestFriendFavoriteColors and assign that to be favoriteColors use spread operator (...) to make a deep copy of the array favoriteColors
+        let myBestFriendFavoriteColors = [...favoriteColors];
+        
+        // Update the last color of the array favoriteColors to be something new (use length property to find the last element)
+        favoriteColors[favoriteColors.length - 1] = "purple";
+        
+        // Update the first element in myBestFriendFavoriteColors to a new value
+        myBestFriendFavoriteColors[0] = "yellow";
+        
+        // Verify that the modifications performed on favoriteColors did not affect myBestFriendFavoriteColors
+        // Verify that the modifications performed on myBestFriendFavoriteColors did not affect favoriteColors
+        
+        console.log("My friend's favorite colors:", myBestFriendFavoriteColors, "My favorite colors:", favoriteColors);
+        
+        alert("My favorite colors: " + favoriteColors);
+        alert("My best friend's favorite colors: " + myBestFriendFavoriteColors);
+      </script>
+    <!-- <script>   alert ("Hello,World!");   
+     </script> -->
 </body>
 </html>
