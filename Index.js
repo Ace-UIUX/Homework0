@@ -1,65 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css" />
-    <title>My Page</title>
-</head>
-<body>
-    <!-- H1 Heading -->
-    <h1>Emmanuel Auta HTML Assignment</h1>
+// 1. Define an object called corolla
+let corolla = {
+    horsePower: 150,
+    year: 2020,
+    color: "blue"
+};
 
-    <!-- External Link -->
-    <p>
-        Visit <a href="https://www.youtube.com/" target="_blank">YouTube</a> for fun.
-    </p>
+// 2. Make a deep copy of the corolla object called civic
+let civic = { ...corolla, horsePower: 180 }; // Copy with updated horsePower
 
-    <!-- Link to the new page -->
-    <p>
-        Go to the <a href="newpage.html">New Page</a>.
-    </p>
+// Verify changes
+console.log("Corolla:", corolla);
+console.log("Civic:", civic);
 
-    <!-- Image -->
-    <img src="CoolYgor.jpg" alt="Ygor looking cool AF">
+// 3. Create a function that subtracts two numbers
+function subtract(num1, num2) {
+    return num1 - num2;
+}
 
-    <!-- First Section -->
-    <section>
-        <h2>About This Page</h2>
-        <p>This is the first section of the page with a list.</p>
+console.log("Subtraction of 10 and 3:", subtract(10, 3)); // Example usage
 
-        <!-- List -->
-        <ul>
-            <li>Item 1</li>
-            <li>Nothing</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-    </section>
+// 4. Create a void function that expects a name and opens an alert
+function showName(name) {
+    alert("The name is: " + name);
+}
 
-    <!-- Second Section -->
-    <section>
-        <h2>Details and Information</h2>
-        <p>This section provides the Table</p>
+// Example call to showName - You can comment this out after testing
+// showName("Emmanuel");
 
-        <!-- Table -->
-        <table border="1">
-            <tr>
-                <th>Header 1</th>
-                <th>Header 2</th>
-            </tr>
-            <tr>
-                <td>Row 1, Cell 1</td>
-                <td>Row 1, Cell 2</td>
-            </tr>
-            <tr>
-                <td>Row 2, Cell 1</td>
-                <td>Row 2, Cell 2</td>
-            </tr>
-        </table>
-    </section>
+// 5. Create an array that holds students' grades
+let grades = [85, 90, 78, 92, 88];
 
-    <!-- Link to external JS file -->
-    <script src="./Index.js"></script>
-</body>
-</html>
+// 6. Loop through the array and add 5 to each element
+for (let i = 0; i < grades.length; i++) {
+    grades[i] += 5;
+}
+
+// Log the updated grades
+console.log("Updated grades:", grades);
+
+// Favorite colors script
+let favoriteColor = "blue";
+let age = 25;
+const name = "John Doe";
+let isMinor = age < 18;
+let favoriteColors = ["blue", "green", "red"];
+let myBestFriendFavoriteColors = [...favoriteColors];
+favoriteColors[favoriteColors.length - 1] = "purple";
+myBestFriendFavoriteColors[0] = "yellow";
+console.log("My friend's favorite colors:", myBestFriendFavoriteColors, "My favorite colors:", favoriteColors);
+alert("My favorite colors: " + favoriteColors);
+alert("My best friend's favorite colors: " + myBestFriendFavoriteColors);
