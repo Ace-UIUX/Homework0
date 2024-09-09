@@ -3,6 +3,9 @@ This is a random text file
 //git >> tool that allows to keep track of changes in our code. (AKA version control)
 //github > centralizes code in the cloud (internet) 
 
+HTML Class
 
 //Include a html contact page. 
-//Include form tag in the HTML (Input types,placeholder)
+//Include form tag in the HTML (Input types{radio,checkbox},placeholder)
+//Colour picker
+
