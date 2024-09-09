@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet"href="./styles.css" />
-    
+    <link rel="stylesheet" href="./styles.css" />
     <title>My Page</title>
 </head>
 <body>
     <!-- H1 Heading -->
-    <h0>Emmanuel Auta HTML Assignment</h0>
+    <h1>Emmanuel Auta HTML Assignment</h1>
 
     <!-- External Link -->
     <p>
-        Visit <a href="https://www.youtube.com/" target="_blank"> Youtube </a> for fun.
+        Visit <a href="https://www.youtube.com/" target="_blank">YouTube</a> for fun.
     </p>
 
     <!-- Link to the new page -->
@@ -59,39 +58,62 @@
             </tr>
         </table>
     </section>
+
+    <!-- Script Section -->
     <script>
-        // Define a favorite color variable which stores a string
+        // 1. Define an object called corolla
+        let corolla = {
+            horsePower: 150,
+            year: 2020,
+            color: "blue"
+        };
+
+        // 2. Make a deep copy of the corolla object called civic
+        let civic = { ...corolla, horsePower: 180 }; // Copy with updated horsePower
+
+        // Verify changes
+        console.log("Corolla:", corolla);
+        console.log("Civic:", civic);
+
+        // 3. Create a function that subtracts two numbers
+        function subtract(num1, num2) {
+            return num1 - num2;
+        }
+
+        console.log("Subtraction of 10 and 3:", subtract(10, 3)); // Example usage
+
+        // 4. Create a void function that expects a name and opens an alert
+        function showName(name) {
+            alert("The name is: " + name);
+        }
+
+        // Example call to showName - You can comment this out after testing
+        // showName("Emmanuel");
+
+        // 5. Create an array that holds students' grades
+        let grades = [85, 90, 78, 92, 88];
+
+        // 6. Loop through the array and add 5 to each element
+        for (let i = 0; i < grades.length; i++) {
+            grades[i] += 5;
+        }
+
+        // Log the updated grades
+        console.log("Updated grades:", grades);
+
+        // Previous script for favorite colors
         let favoriteColor = "blue";
-        
-        // Define an age variable which stores a number
         let age = 25;
-        
-        // Define a constant name, which stores a string
         const name = "John Doe";
-        
-        // Define a variable called isMinor which stores a Boolean
         let isMinor = age < 18;
-        
-        // Define an array called favoriteColors which stores a collection of strings (at least 2)
         let favoriteColors = ["blue", "green", "red"];
-        
-        // Declare an array called myBestFriendFavoriteColors and assign that to be favoriteColors use spread operator (...) to make a deep copy of the array favoriteColors
         let myBestFriendFavoriteColors = [...favoriteColors];
-        
-        // Update the last color of the array favoriteColors to be something new (use length property to find the last element)
         favoriteColors[favoriteColors.length - 1] = "purple";
-        
-        // Update the first element in myBestFriendFavoriteColors to a new value
         myBestFriendFavoriteColors[0] = "yellow";
-        
-        // Verify that the modifications performed on favoriteColors did not affect myBestFriendFavoriteColors
-        // Verify that the modifications performed on myBestFriendFavoriteColors did not affect favoriteColors
-        
         console.log("My friend's favorite colors:", myBestFriendFavoriteColors, "My favorite colors:", favoriteColors);
-        
-        alert("My favorite colors: " + favoriteColors);
-        alert("My best friend's favorite colors: " + myBestFriendFavoriteColors);
-      </script>
+        // alert("My favorite colors: " + favoriteColors);
+        // alert("My best friend's favorite colors: " + myBestFriendFavoriteColors);
+    </script>
 
 </body>
 </html>
