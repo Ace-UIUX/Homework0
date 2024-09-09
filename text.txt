@@ -8,4 +8,9 @@ HTML Class
 //Include a html contact page. 
 //Include form tag in the HTML (Input types{radio,checkbox},placeholder)
 //Colour picker
+//Section and Div used to devide
+??not all elements can hav nested elements e.g Images. If the have open and close they can e.g <Section></Section>
 
+//Java Script
+//Way to give instructions to a browser
+//HTML BOnes,Css Skin, Java Script Life
