@@ -14,3 +14,6 @@ HTML Class
 //Java Script
 //Way to give instructions to a browser
 //HTML BOnes,Css Skin, Java Script Life
+
+
+//Map,filter and Reduce on arrays used in Java Script for react frameworks
